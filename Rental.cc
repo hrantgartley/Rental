@@ -2,7 +2,8 @@
  Grant Hartley
  8 May 2023
  Implementation of the Rental class
- Description: This implementation file contains the definitions of the functions declared in Rental.h to manipulate the data members of the class. 
+ Description: This implementation file contains the definitions of the functions declared in Rental.h
+ to manipulate the data members of the class.
 */
 
 #include "Rental.h"
@@ -126,7 +127,7 @@ string MovieRentalSystem::GetSalesData() {
 }
 
 string MovieRentalSystem::GetCustomerEmail() {
-    return CustomerEmail;
+    return this->CustomerEmail;
 }
 
 void MovieRentalSystem::PrintOrderTotal() {
@@ -178,22 +179,22 @@ double MovieRentalSystem::GetSalesTax() const {
 }
 
 double MovieRentalSystem::GetDiscount() const {
-    return Discount;
+    return this->Discount;
 }
 double MovieRentalSystem::GetTotalPrice() const {
-    return TotalPrice;
+    return this->TotalPrice;
 }
 
 int MovieRentalSystem::GetMonth() const {
-    return Month;
+    return this->Month;
 }
 
 int MovieRentalSystem::GetDay() const {
-    return Day;
+    return this->Day;
 }
 
 int MovieRentalSystem::GetYear() const {
-    return Year;
+    return this->Year;
 }
 
 bool MovieRentalSystem::isValid() {
@@ -225,7 +226,7 @@ void MovieRentalSystem::PrintMovies() {
             cout << Movies[i] << endl;
         }
     }
-    cout << endl;
+    cout << "------------------------" << endl;
     cout << endl;
 }
 
@@ -234,18 +235,16 @@ void MovieRentalSystem::AddMovieToQueue(string movie) {
 }
 
 void MovieRentalSystem::RemoveMovieFromQueue() {
-    if (!MovieQueue.empty()) {
+    if (!MovieQueue.empty())
         MovieQueue.erase(MovieQueue.begin());
-    }
 }
 
 void MovieRentalSystem::PrintMovieQueue() {
     cout << endl;
     cout << "Movie Queue" << endl;
     cout << "------------------------" << endl;
-    for (int i = 0; i < MovieQueue.size(); i++) {
+    for (int i = 0; i < MovieQueue.size(); i++)
         cout << MovieQueue[i] << endl;
-    }
-    cout << endl;
+    cout << "------------------------" << endl;
     cout << endl;
 }

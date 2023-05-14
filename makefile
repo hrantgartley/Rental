@@ -14,5 +14,6 @@ main.o: main.cc
 Rental.o: Rental.cc
 	g++ -c Rental.cc
 
+
 clean:
 	$(CLEAN_COMMAND)

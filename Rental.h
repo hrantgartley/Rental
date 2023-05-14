@@ -1,8 +1,8 @@
+#include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -14,7 +14,7 @@ class MovieRentalSystem {
     double SalesTax, Discount, TotalPrice;
     int OrderNumber, Day, Month, Year, MovieYear, MovieMonth, MovieDay;
     string Movies[MAX];
-    vector <string> MovieQueue;
+    vector<string> MovieQueue;
 
    public:
     MovieRentalSystem();
