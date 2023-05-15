@@ -18,7 +18,6 @@ Account::Account(string first, string last) {
     AccountNumber = GenerateAccountNumber();
 }
 
-
 string Account::DisplayFullName() {
     string FullName = FirstName + " " + LastName;
     return FullName;
@@ -32,5 +31,11 @@ int Account::GenerateAccountNumber() {
 
 void Account::ShowAccountInfo() {
     cout << "Account Holder Name: " << DisplayFullName() << endl;
-    cout << "Account Number: " << GenerateAccountNumber() << endl;   
+    cout << "Account Number: " << GenerateAccountNumber() << endl;
+}
+
+void Account::SetAccountInfo(string first, string last, int account) {
+    first = FirstName;
+    last = LastName;
+    account = AccountNumber;
 }

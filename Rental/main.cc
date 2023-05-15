@@ -14,7 +14,7 @@ int main() {
     mrs1.AddMovieToQueue("John Wick");
     mrs1.RemoveMovieFromQueue();
     mrs1.PrintMovieQueue();
-    
+
     cout << mrs1.GetCustomerInfo();
     cout << mrs1.GetSalesData();
     cout << endl;

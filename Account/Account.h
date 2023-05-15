@@ -1,6 +1,7 @@
-#include <iostream>
-#include <ctime>
 #include <cstdlib>
+#include <ctime>
+#include <iostream>
+
 using namespace std;
 
 class Account {
@@ -16,5 +17,5 @@ class Account {
     string DisplayFullName();
     int GenerateAccountNumber();
     void ShowAccountInfo();
-
+    void SetAccountInfo(string, string, int);
 };
