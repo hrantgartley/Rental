@@ -12,5 +12,6 @@ class Address {
    public:
     Address();
     Address(string, string, string, string, int);
+    string ReturnShortenedAddress() const;
     void PrintFullAddress() const;
 };

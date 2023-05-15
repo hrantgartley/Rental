@@ -24,8 +24,13 @@ void Address::PrintFullAddress() const{
     cout << "ZIP: " << ZipCode << endl;
 }
 
+string Address::ReturnShortenedAddress() const {
+    string ShortAddress = City + ", " + State + ", " + to_string(ZipCode);
+    return "Brief Address: " + ShortAddress;
+}
+
 int main() {
     Address a("Alabama", "Sylacauga", "T", "179 Autumn Acres Ln", 35150);
-    a.PrintFullAddress();
+    cout << a.ReturnShortenedAddress();
     return 0;
 }
