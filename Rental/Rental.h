@@ -51,4 +51,5 @@ class MovieRentalSystem {
     bool isValid();
     friend ostream& operator<<(ostream& os, const MovieRentalSystem& mrs);
     friend istream& operator>>(istream& is, MovieRentalSystem& mrs);
+    
 };
