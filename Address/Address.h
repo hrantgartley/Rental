@@ -1,4 +1,5 @@
 #include <iostream>
+#pragma once
 using namespace std;
 
 class Address {
@@ -14,4 +15,5 @@ class Address {
     Address(string, string, string, string, int);
     string ReturnShortenedAddress() const;
     void PrintFullAddress() const;
+    void SetInfo(string, string, string, string, int);
 };

@@ -16,11 +16,11 @@ Address::Address(string state, string city, string county, string streetAddress,
     ZipCode = zipCode;
 }
 
-void Address::PrintFullAddress() const{
-    cout << "City: " <<City << endl;
+void Address::PrintFullAddress() const {
+    cout << "City: " << City << endl;
     cout << "State: " << State << endl;
-    cout << "County: "<< County << endl;
-    cout << "Street address: " <<StreetAddress << endl;
+    cout << "County: " << County << endl;
+    cout << "Street address: " << StreetAddress << endl;
     cout << "ZIP: " << ZipCode << endl;
 }
 
@@ -29,8 +29,10 @@ string Address::ReturnShortenedAddress() const {
     return "Brief Address: " + ShortAddress;
 }
 
-int main() {
-    Address a("Alabama", "Sylacauga", "T", "179 Autumn Acres Ln", 35150);
-    cout << a.ReturnShortenedAddress();
-    return 0;
+void Address::SetInfo(string state, string city, string county, string streetAddress, int zipCode) {
+    State = state;
+    City = city;
+    County = county;
+    StreetAddress = streetAddress;
+    ZipCode = zipCode;
 }

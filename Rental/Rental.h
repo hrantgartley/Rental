@@ -20,10 +20,13 @@ class MovieRentalSystem {
     MovieRentalSystem();
     MovieRentalSystem(string, string, string*, double, double, double, int, int, int, int);
     ~MovieRentalSystem();
+    bool isValid();
     double CalculateOrderTotal();
     double GetSalesTax() const;
     double GetDiscount() const;
     double GetTotalPrice() const;
+    friend ostream& operator<<(ostream& os, const MovieRentalSystem& mrs);
+    friend istream& operator>>(istream& is, MovieRentalSystem& mrs);
     int GetDay() const;
     int GetMonth() const;
     int GetYear() const;
@@ -48,7 +51,4 @@ class MovieRentalSystem {
     void RemoveMovieFromQueue();
     void PrintMovieQueue();
     void PrintMovies();
-    bool isValid();
-    friend ostream& operator<<(ostream& os, const MovieRentalSystem& mrs);
-    friend istream& operator>>(istream& is, MovieRentalSystem& mrs);
 };
