@@ -7,7 +7,7 @@ int main() {
     cout << "------------------------------------------\n";
     cout << "ADDRESS\n";
     cout << "------------------------------------------\n";
-    a.SetInfo("Alabama", "Sylacauga", "Talladega", "179 Autumn Acres Ln", 35150);
+    a.SetInfo("Alabama", "Vincent", "Ta", "179 ", 35178);
     cout << a.ReturnShortenedAddress();
     cout << std::endl;
     cout << "------------------------------------------\n";
